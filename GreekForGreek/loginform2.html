@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Login Page</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 1em;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+        }
+        
+        /* Input Styling */
+        .input-group {
+            position: relative;
+        }
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+        .input-group input {
+            width: 80%;
+            padding: 0.8em 2.5em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        .input-group input:focus {
+            border-color: #0066cc;
+        }
+        
+        /* Button Styling */
+        button[type="submit"] {
+            padding: 0.8em;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #004a99;
+        }
+        
+        /* Checkbox and Label */
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        /* Divider for OR */
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 1em 0;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .or-divider::before,
+        .or-divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+        .or-divider span {
+            margin: 0 0.5em;
+        }
+
+        /* Social Media Buttons */
+        .social-login button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            gap: 0.5em;
+            width: 100%;
+        }
+        .social-login button i {
+            font-size: 1.2em;
+        }
+        .social-login .google-button {
+            background-color: #db4437;
+            color: white;
+        }
+        .social-login .google-button:hover {
+            background-color: #c53929;
+        }
+        .social-login .facebook-button {
+            background-color: #4267b2;
+            color: white;
+        }
+        .social-login .facebook-button:hover {
+            background-color: #365899;
+        }
+
+        /* Forgot Password Link */
+        .forgot-password {
+            font-size: 0.9em;
+            color: #0066cc;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1em;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        
+        /* Signup Link */
+        .signup-link {
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+        .signup-link a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username or Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember" checked>
+                <label for="remember">Remember me</label>
+            </div>
+            <a class="forgot-password" href="#">Forgot Password?</a>
+            <div class="or-divider"><span>OR</span></div>
+            <div class="social-login">
+                <button class="google-button">
+                    <i class="fab fa-google"></i> Login with Google
+                </button>
+                <button class="facebook-button">
+                    <i class="fab fa-facebook"></i> Login with Facebook
+                </button>
+            </div>
+        </form>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="signupform2.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>

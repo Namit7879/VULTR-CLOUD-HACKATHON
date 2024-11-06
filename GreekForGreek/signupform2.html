@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Signup Page</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 1em;
+            color: #333;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        
+        /* Input Styling */
+        .username, .email, .password, .confirm-password {
+            position: relative;
+        }
+        .username i, .email i, .password i, .confirm-password i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+        .username input, .email input, .password input, .confirm-password input {
+            width: 80%;
+            padding: 0.8em 2.5em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1em;
+        }
+        
+        /* Button Styling */
+        button[type="submit"] {
+            padding: 0.8em;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Social Login */
+        .social-login {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            text-align: center;
+        }
+        .social-login p {
+            font-size: 0.9em;
+            color: #555;
+            margin: 1em 0 0;
+        }
+
+        /* Social Media Buttons */
+        .google-button, .facebook-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .google-button i { color: #db4437; }
+        .facebook-button i { color: #4267b2; }
+        .google-button:hover {
+            background-color: #f4f4f4;
+        }
+        .facebook-button:hover {
+            background-color: #f0f2f5;
+        }
+
+        /* Signup Link */
+        .signup-link {
+            margin-top: 1em;
+            font-size: 0.9em;
+        }
+        .signup-link a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form action="/signup" method="post">
+            <div class="username">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <br>
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <br>
+            <div class="password">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <br>
+            <div class="confirm-password">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <br>
+            <button type="submit">Sign Up</button>
+            <br>
+            <div class="social-login">
+                <p>Or sign up with</p>
+                <button class="google-button">
+                    <i class="fab fa-google"></i> Google
+                </button>
+                <button class="facebook-button">
+                    <i class="fab fa-facebook"></i> Facebook
+                </button>
+            </div>
+        </form>
+        <div class="signup-link">
+            <a href="loginform2.html">Already have an account? Log in</a>
+        </div>
+    </div>
+</body>
+</html>

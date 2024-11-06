@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="shortcut icon" href="logonew.ico" type="image/x-icon">
+    <title>AI Toolbox</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logonew.jpg" alt="LOGO" width="50px">
+                <p>AI Toolbox</p>
+            </div>
+            
+            <div class="icon">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Favourites
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="button">
+                <form class="container-fluid justify-content-start">
+                    <!-- <button  class="btn btn-outline-success me-2" type="button ">LOGIN</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">SIGN UP</button> -->
+                    <a href="loginform2.html">LOGIN</a>
+                    <a href="signupform2.html">SIGN UP</a>
+                </form>
+               
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="leftside">
+            <div class="categories">
+                <h3>Categories </h3>
+                <!-- <div class="category ">
+                    <p>Trending Tools </p>
+                    <p>Recently Used </p>
+                    <p>Writing Tools</p>
+                    <p>Editing Tools</p>
+                    <p>Video Creation</p>
+                    <p>Image Generation</p>
+                    <p>File Convertion</p>
+                    <p>General AI</p>
+                    <p>Website Builder</p>
+                </div> -->
+
+                <div id="simple-list-example" class="category">
+                    <a class="p-1 rounded" href="#simple-list-item-1">Trending Tools</a>
+                    <a class="p-1 rounded" href="#simple-list-item-2">Recently Used</a>
+                    <a class="p-1 rounded" href="#simple-list-item-3">Writing Tools</a>
+                    <a class="p-1 rounded" href="#simple-list-item-4">Editing Tools</a>
+                    <a class="p-1 rounded" href="#simple-list-item-5">Video Creation</a>
+                </div>
+
+                <div class="extra">
+                    <div class="favourites">
+                        <h3>Your Favourites</h3>
+                    </div>
+                </div>
+        </aside>
+        <section class="rightside" data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
+            data-bs-smooth-scroll="true" tabindex="0">
+            <div class="NameContainer">
+                <p class="name">
+                    Hello! Friend. What are doing Today?
+                </p>
+            </div>
+            <div class="container">
+                <p class="h1" id="simple-list-item-1">
+                    Trending Tools
+                </p>
+                <div class="boxes">
+                    <div class="box">
+                        <!-- <a href="https://www.ilovepdf.com/">iLovepdf</a> -->
+                        <h3 class="tool-name">ChatGpt</h3>
+                        <div class="tool-logo">
+                            <img src="chatgpt.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p>ChatGPT assists with a wide range of tasks, including answering questions, generating text, drafting emails, writing code, brainstorming ideas, and offering personalized recommendations.</p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://www.chatgpt.com/" class="use-button">Try Now</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3 class="tool-name">Gemmini</h3>
+                        <div class="tool-logo">
+                            <img src="gemni.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p>Google's Gemini is an advanced AI model that competes with ChatGPT and Bard, designed to handle complex tasks such as answering questions, generating text, translating languages, and assisting in various research and creative endeavors.</p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://gemini.google.com/" class="use-button">Try Now</a>
+                        </div>
+
+
+                    </div>
+                    <div class="box">
+                        <h3 class="tool-name">Adobe</h3>
+                        <div class="tool-logo">
+                            <img src="abode.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p>Adobe offers a suite of creative and digital media software, including Photoshop, Illustrator, and Acrobat, widely used for design, video editing, document management, and digital marketing, catering to creative professionals and enterprises.</p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://adobe.com/" class="use-button">Try Now</a>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <h3 class="tool-name">Grammarly</h3>
+                        <div class="tool-logo">
+                            <img src="grammarly.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p>Grammarly is an AI-powered writing assistant that helps improve grammar, clarity, and tone, offering real-time writing suggestions for emails, documents, and social media posts, making it invaluable for polished and professional communication.</p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://www.grammarly.com/" class="use-button">Try Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="box">
+
+                        <h3 class="tool-name">iLovepdf</h3>
+                        <div class="tool-logo">
+                            <img src="ilovepdf.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p> iLovePDF is an online tool that provides a range of PDF solutions, including merging, splitting, compressing, converting, and editing PDFs, all accessible in a user-friendly interface. It simplifies PDF management and is perfect for both personal and professional use.</p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://www.ilovepdf.com/" class="use-button">Try Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="box">
+                        <h3 class="tool-name">Small Pdf</h3>
+                        <div class="tool-logo">
+                            <img src="smallpdf.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p>Smallpdf is a lightweight, easy-to-use PDF tool that enables users to compress, edit, convert, merge, and sign PDFs quickly, streamlining document management for both personal and professional use.</p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://smallpdf.com/" class="use-button">Try Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="box">
+                        <h3 class="tool-name">Adobe</h3>
+                        <div class="tool-logo">
+                            <img src="abode.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p>Adobe offers a suite of creative and digital media software, including Photoshop, Illustrator, and Acrobat, widely used for design, video editing, document management, and digital marketing, catering to creative professionals and enterprises.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://www.chatgpt.com/" class="use-button">Try Now</a>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <h3 class="tool-name">Grammarly</h3>
+                        <div class="tool-logo">
+                            <img src="grammarly.png" alt="Logo of AI Tool 1">
+                            <div class="tool-description">
+                                <p>Grammarly is an AI-powered writing assistant that helps improve grammar, clarity, and tone, offering real-time writing suggestions for emails, documents, and social media posts, making it invaluable for polished and professional communication.</p>
+                            </div>
+                        </div>
+                        <div class="tool-actions">
+                            <a href="link-to-details1" class="details-button">More Details</a>
+                            <a href="https://www.chatgpt.com/" class="use-button">Try Now</a>
+                        </div>
+                
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <p class="h1" id="simple-list-item-2">
+                    Recently Used
+                </p>
+                <div class="boxes">
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <p class="h1" id="simple-list-item-3">
+                    Writing Tools
+                </p>
+                <div class="boxes">
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <p class="h1" id="simple-list-item-4">
+                    Editing Tools
+                </p>
+                <div class="boxes">
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <p class="h1" id="simple-list-item-5">
+                    Video Creation
+                </p>
+                <div class="boxes">
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.jasper.ai/">Jasper</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://writesonic.com/">Writesonic</a>
+                    </div>
+                    <div class="box">
+                        <a href="https://www.chatgpt.com/">ChatGpt</a>
+                        <br>
+                    </div>
+                    <div class="box">
+                        <a href="https://gemini.google.com/">Gemmini</a>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        </div>
+    </main>
+    <footer>
+        <span>
+            <p><b>Email :-</b> aitoolbox@gmail.com</p>
+        </span>
+        <span>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
